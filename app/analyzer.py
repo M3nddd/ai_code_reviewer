@@ -6,14 +6,14 @@ from pathlib import Path
 
 load_dotenv(dotenv_path=Path("I:/Lab4/ai_code_reviewer/.env"))
 
-API_KEY = os.getenv("OPENROUTER_API_KEY")
+API_KEY = "OPENROUTER_API_KEY"
 
 def analyze_code(code: str, language: str) -> dict:
     prompt = f"""
 You are an expert code reviewer. Analyze the following {language} code and provide:
 
 1. **Bugs**: List any bugs or errors found
-2. **Code Quality Issues**: Style, naming, complexity problems
+2. **Code Quality Issues**: Style, naming,git rm --cached app/analyzer.py complexity problems
 3. **Security Issues**: Any security vulnerabilities
 4. **Suggestions**: How to improve the code
 5. **Overall Score**: Rate the code from 1-10

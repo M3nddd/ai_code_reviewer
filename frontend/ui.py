@@ -13,7 +13,6 @@ st.set_page_config(
 
 st.title("AI Bug & Code Reviewer")
 st.caption("Powered by NVIDIA: Nemotron 3 Super — Paste your code and get instant feedback")
-
 col1, col2 = st.columns([1, 1])
 
 with col1:
