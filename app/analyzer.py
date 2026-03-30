@@ -4,7 +4,9 @@ import json
 from dotenv import load_dotenv
 from pathlib import Path
 
-API_KEY = "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"
+load_dotenv(dotenv_path=Path("I:/Lab4/ai_code_reviewer/.env"))
+
+API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 def analyze_code(code: str, language: str) -> dict:
     prompt = f"""
