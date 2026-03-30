@@ -1,4 +1,4 @@
-# AI Bug and r
+# AI Bug and code reviewer
 
 A web app that uses NVIDIA Nemotron 3 Super AI to analyze your code and give detailed feedback on bugs, security issues, code quality, and improvements.
 
