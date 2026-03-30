@@ -1,7 +1,10 @@
+import os
 import requests
 import json
+from dotenv import load_dotenv
+from pathlib import Path
 
-API_KEY = "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"
+API_KEY = "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"
 
 def analyze_code(code: str, language: str) -> dict:
     prompt = f"""
